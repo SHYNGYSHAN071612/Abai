@@ -1,0 +1,219 @@
+<!doctype html>
+<html lang="kk">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Абай Құнанбаев — Өмір баяны</title>
+  <meta name="description" content="Абай Құнанбаевтың қысқаша өмірбаяны, негізгі еңбектері және цитаталары.">
+
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700;900&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg:#eef2f7;
+      --card:#ffffff;
+      --accent:#2563eb;
+      --muted:#6b7280;
+      --radius:14px;
+      --max-w:1100px;
+      color-scheme: light;
+      font-family: 'Roboto', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+    }
+    *{box-sizing:border-box;margin:0;padding:0}
+    html,body{
+      height:100%;
+      background:linear-gradient(rgba(240,242,247,0.85),rgba(240,242,247,0.85)),url('https://images.unsplash.com/photo-1529333166437-7750a6dd5a70?auto=format&fit=crop&w=1500&q=80') no-repeat center/cover;
+      color:#111;
+      scroll-behavior:smooth;
+    }
+
+    .container{max-width:var(--max-w);margin:40px auto;padding:24px;}
+
+    header.site-header{
+      display:flex;align-items:center;gap:20px;margin-bottom:28px;
+      animation:fadeDown 1s ease-in-out;
+    }
+    .logo{
+      width:84px;height:84px;border-radius:50%;
+      background:linear-gradient(135deg,var(--accent),#60a5fa);
+      display:flex;align-items:center;justify-content:center;
+      color:white;font-weight:700;font-size:22px;
+      box-shadow:0 4px 15px rgba(0,0,0,0.2);
+      transition:transform 0.3s ease;
+    }
+    .logo:hover{transform:rotate(10deg) scale(1.05);}
+
+    .site-title h1{margin:0;font-size:28px;}
+    .site-title p{margin:4px 0 0;color:var(--muted);}
+    nav{display:flex;gap:12px;margin-top:12px;flex-wrap:wrap;}
+    nav a{
+      padding:8px 14px;border-radius:10px;
+      text-decoration:none;color:var(--accent);
+      font-weight:600;transition:all 0.25s ease;
+    }
+    nav a:hover{
+      background:var(--accent);color:#fff;
+      transform:translateY(-2px);
+      box-shadow:0 3px 10px rgba(37,99,235,0.25);
+    }
+
+    .hero{
+      display:grid;grid-template-columns:1fr 360px;
+      gap:24px;align-items:start;margin-bottom:28px;
+      animation:fadeUp 1s ease-in-out;
+    }
+
+    .bio-card{
+      background:var(--card);border-radius:var(--radius);
+      padding:20px;
+      box-shadow:0 6px 18px rgba(20,20,40,0.1);
+      transition:transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .bio-card:hover{
+      transform:translateY(-5px);
+      box-shadow:0 10px 25px rgba(0,0,0,0.1);
+    }
+
+    .bio-card h2, .bio-card h3{margin-top:0;}
+    .quote{
+      font-style:italic;color:var(--accent);
+      border-left:3px solid var(--accent);
+      padding-left:12px;margin:12px 0;
+    }
+
+    .stats{display:flex;gap:12px;margin-top:12px;}
+    .stat{
+      background:#f9fbff;padding:10px;border-radius:10px;
+      flex:1;text-align:center;
+      transition:all 0.3s ease;
+    }
+    .stat:hover{background:#e0ecff;}
+    .stat strong{display:block;font-size:18px;}
+
+    .timeline{padding:18px;}
+    .event{display:flex;gap:16px;padding:12px 0;border-bottom:1px dashed #ececec;}
+    .event:last-child{border-bottom:0;}
+    .event .year{min-width:88px;font-weight:700;color:var(--muted);}
+
+    .gallery{
+      display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));
+      gap:10px;margin-top:14px;
+    }
+    .gallery img{
+      width:100%;height:130px;object-fit:cover;border-radius:8px;
+      transition:transform 0.4s ease;
+    }
+    .gallery img:hover{transform:scale(1.08);}
+
+    footer{
+      margin-top:36px;color:var(--muted);font-size:14px;text-align:center;
+      padding:20px 0;
+      animation:fadeUp 1.5s ease;
+    }
+    #currentDate{color:#2563eb;font-weight:600;}
+
+    @media (max-width:880px){
+      .hero{grid-template-columns:1fr;}
+      .site-header{flex-direction:column;align-items:flex-start;}
+    }
+
+    @keyframes fadeUp{from{opacity:0;transform:translateY(20px);}to{opacity:1;transform:translateY(0);}}
+    @keyframes fadeDown{from{opacity:0;transform:translateY(-20px);}to{opacity:1;transform:translateY(0);}}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header class="site-header">
+      <div class="logo">АБ</div>
+      <div class="site-title">
+        <h1>Абай Құнанбаев</h1>
+        <p>Қазақтың ірі ақыны, ойшылы және ағартушы (1845–1904)</p>
+        <nav>
+          <a href="#about">Өмірі</a>
+          <a href="#works">Еңбектері</a>
+          <a href="#timeline">Хронология</a>
+          <a href="#quotes">Цитаталар</a>
+        </nav>
+      </div>
+    </header>
+
+    <section class="hero">
+      <article class="bio-card" id="about">
+        <h2>Қысқаша өмірбаяны</h2>
+        <p>
+          Абай Құнанбаев — қазақ әдебиеті мен мәдениетінде үлкен із қалдырған ақын, философ және қоғам қайраткері. Ол туған жеріне, халық дәстүріне терең сүйіспеншілікпен қараған және білім мен ғылымды жоғары қойған тұлға болды.
+        </p>
+        <div class="quote">"Өнер алды — білім, білім — халықтың тірегі"</div>
+        <div class="stats">
+          <div class="stat"><span>Өмір</span><strong>1845 — 1904</strong></div>
+          <div class="stat"><span>Түрі</span><strong>Ақын, ойшыл</strong></div>
+          <div class="stat"><span>Тілі</span><strong>Қазақ</strong></div>
+        </div>
+        <p style="margin-top:12px">Толығырақ хронологияны қараңыз немесе еңбектер бөліміне өтіңіз.</p>
+        <a class="btn" href="#works" style="display:inline-block;margin-top:10px;padding:10px 16px;border-radius:10px;background:var(--accent);color:white;text-decoration:none;font-weight:600;">Еңбектерді оқу</a>
+      </article>
+
+      <aside class="bio-card">
+        <h3>Жедел фактілер</h3>
+        <ul style="padding-left:18px;margin:8px 0;color:var(--muted)">
+          <li>Туған жері: Семей облысы, Қасқабұлақ</li>
+          <li>Қызметі: Ағарушы, аудармашы, ақын</li>
+          <li>Шығармалары: қара сөздер, өлеңдер, аудармалар</li>
+        </ul>
+        <h4 style="margin-top:14px">Фото</h4>
+        <div class="gallery">
+          <img src="1723218507.jpg" alt="Абай портреті" style="width:250px; height:300px; object-fit:cover; border-radius:10px;">
+
+          <img src="48ccbf6522a3e801ea719ebb5d0984b5 (1).jpg" alt="Абай портреті" style="width:250px; height:300px; object-fit:cover; border-radius:10px;">
+
+        </div>
+      </aside>
+    </section>
+
+    <section class="bio-card" id="works" style="margin-bottom:18px">
+      <h2>Негізгі еңбектері</h2>
+      <ol>
+        <li>«Қара сөздер» — философиялық ойлар жинағы</li>
+        <li>Өлеңдер — адамгершілік, еңбек, білім туралы</li>
+        <li>Аудармалар — Пушкин, Лермонтов, Крылов шығармалары</li>
+      </ol>
+    </section>
+
+    <section class="bio-card" id="timeline">
+      <h2>Хронология</h2>
+      <div class="timeline">
+        <div class="event"><div class="year">1845</div><div>Абай Семей өңірінде дүниеге келді.</div></div>
+        <div class="event"><div class="year">1860–1870</div><div>Білім алып, алғашқы өлеңдерін жаза бастады.</div></div>
+        <div class="event"><div class="year">1880–1900</div><div>Аудармалар мен философиялық еңбектер кезеңі.</div></div>
+        <div class="event"><div class="year">1904</div><div>Абайдың өмірінің соңы.</div></div>
+      </div>
+    </section>
+
+    <section class="bio-card" id="quotes">
+      <h2>Таңдамалы цитаталар</h2>
+      <blockquote>"Ұстаз болу — халыққа қызмет." — Абай</blockquote>
+      <blockquote>"Адам баласы адам баласынан ақыл, ғылым, ар, мінез деген нәрселермен озбақ."</blockquote>
+    </section>
+
+    <footer>
+      <p>Бұл нұсқа — заманауи дизайн мен анимация қосылған HTML үлгісі.</p>
+      <p id="currentDate"></p>
+    </footer>
+  </div>
+
+  <script>
+    // Жұмсақ айналдыру
+    document.querySelectorAll('a[href^="#"]').forEach(a=>{
+      a.addEventListener('click', e=>{
+        const target=document.querySelector(a.getAttribute('href'));
+        if(target){e.preventDefault();target.scrollIntoView({behavior:'smooth'});}
+      });
+    });
+
+    // Күн шығару
+    const dateEl=document.getElementById('currentDate');
+    const today=new Date();
+    const options={year:'numeric',month:'long',day:'numeric'};
+    dateEl.textContent="Бүгінгі күн: "+today.toLocaleDateString('kk-KZ',options);
+  </script>
+</body>
+</html>
